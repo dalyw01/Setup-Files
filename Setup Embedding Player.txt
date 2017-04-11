@@ -1,0 +1,14 @@
+++++++++++++++++++++++++++++
+EMBEDDING A MEDIA PLAYER
+++++++++++++++++++++++++++++
+
+sudo pico /etc/hosts
+
+mc-s104581:~ dalyw01$ ls
+Applications		Downloads					Movies			Public						audio_clips_test.txt
+Desktop					Library						Music				Text-1.txt				test.csv
+Documents				Map Remote.xml		Pictures		Video Chart.txt		testing profiles.txt
+
+Finally run this command in terminal -> python -m SimpleHTTPServer
+Go here 					        					 -> http://localhost.bbc.co.uk:8000/
+SimpleHTTPServer	                	 -> Kill this guy when you’re done (CTRL + C or just simply close terminal)

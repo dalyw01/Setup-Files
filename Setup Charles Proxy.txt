@@ -1,0 +1,73 @@
+++++++++++++++++++++++++++++
+TESTING WITH CHARLES
+++++++++++++++++++++++++++++
+
+ORDER IS IMPORTANT
+
++++++++++++++++++++
+SETUP PC
++++++++++++++++++++
+
+- Green (or YELLOW) cable IN
+- Network share ON (This is under SHARING, turn it on/off seems to do the trick if it's being a pain)
+- Wi-fi OFF
+- Location OFF
+- Start running CHARLES
+
++++++++++++++++++++
+SETUP Android Phone
++++++++++++++++++++
+
+- Go to SETTINGS
+- Find network with name of PC Charles is running on (MY laptop appears as MC-S104581)
+- Tap + Hold that network name
+- Tap Modify Network
+- Tap Advanced Options
+- Tap Proxy Manual
+
+- Proxy hostname = To get IP of PC go to         [Apple Logo] -> [System Preferences] -> Network
+- Proxy Port     = To get PORT of your PC go to  [Charles]    -> Proxy                -> Proxy Settings
+
+- CONNECT to the PC you’ve configured
+
+NOTE : You can connect to a PC WITHOUT setting hostname + port
+       However if you don't then the info will not be collected in Charles
+
++++++++++++++++++++
+SETUP Iphone
++++++++++++++++++++
+
+- Go to SETTINGS
+- Under HTTP Proxy
+- Server = IP of PC (e.g 192.168.3.121 USUALLY)
+- Port   = 8888
+- Authentication OFF
+
++++++++++++++++++++++++++
+Getting A Cookie + Checking
++++++++++++++++++++++++++
+
+Connect to a different network from your PC ( MediaPlayout / pullmyfingers1 )
+Once you do that you should be given a cookie
+Run javascript:alert and see output for cookie (S1)
+Connected to my machine MC-S104581
+Cleared stats inspector
+Cleared BBC Media App info on my phone
+Went to the following URL with my phone -> is.gd/ruplify
+Typical output if cookies WERE set = ns_alias | 160.119.56DEB2C60025EF01F2CFDF2985
+
+    Go to STATS INSPECTOR
+    Click on an SMP
+    Go BACK to STATS INSPECTOR
+    There should be info generated ECHO/DAX/Istats etc.
+    Begin Testing!
+
+    Basically if you see the grey wi-fi icon and an upwards arrow you’re good!
+
++++++++++++++++++++++++++++++++
+Checking stats for jim for FLASH INT
++++++++++++++++++++++++++++++++
+Go to Int + Flash with any cook-book
+Go to inspect element -> Network
+look under “sa.bbc.co.uk”
+Go to the headers tab and look at the values + keys
