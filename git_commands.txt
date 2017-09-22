@@ -1,0 +1,113 @@
++-----------------------------------------+
+Handy Links
++-----------------------------------------+
+
+Branch basics - https://www.youtube.com/watch?v=LbanWJyLMnA
+Working with other peoples projects - https://www.youtube.com/watch?v=W7oR8-9H0gs
+http://james-ramsden.com/git-create-new-branch-push-bitbucket/
+
++-----------------------------------------+
+General Git Commands
++-----------------------------------------+
+
+git --version
+git config --global user.name 
+git config --global user.email
+git config --list
+git help commit
+git log
+git diff
+
+git add derp.rb
+git add willsonite_1/*                  <- To add directory and all its contents
+git add .
+git status
+git commit -m "Adding derp"
+
+git checkout index.html                 <- Reverting to repo copy from your (probably bad) working copy
+git checkout 53283cd --index.html       <- How to change to version "53283cd" of file "index.html"
+
+git mv second.txt pudding.txt           <- Rename file "second.txt", add + commit afterwards)
+git mv pudding.txt LoveNotes/patty.txt  <- Rename + move file "pudding.txt" , add + commit afterwards)
+
+git reset HEAD profile.html             <- How to UNSTAGE a file "profile.html")
+
++-----------------------------------------------------+
+Creating repo from local files to an online GitHub repo
++-----------------------------------------------------+
+
+Make a repo on github
+- www.github.com
+
+Go to your folder
+- cd derp
+
+Check it has your files
+- ls
+
+Initialise git
+- git init
+
+Link it to the new repo
+- git remote add origin https://github.com/dalyw/SetupCucumber.git
+
+Add the files
+- git add .
+
+Commit the files
+- git commit -m "derpy derp"
+
+Push to master 
+- git push origin new_dev_branch
+
++------------------------------------------------------------------------------------------+
+Downloading online repo code, setting up new branch from it and commiting to the NEW branch
++------------------------------------------------------------------------------------------+
+
+Make a new folder:
+- mkdir derp
+
+Clone to that folder:
+- git clone https://github.com/dalyw01/Scanner
+
+Jump into that folder:
+- cd derp
+
+Create a branch:
+- git branch JR-branch
+
+Jump onto that branch:
+- git checkout JR-branch
+
+Add any new files:
+- git add * 
+
+Commit any changes. Note that nothing is uploaded yet!
+- git commit -m "comment"
+
+Upload (“push“) your changes to the repository:
+- git push origin JR-branch
+
+Check github and you'll see a new branch has been created!
+
++-------------------------------------------+
+Setting a new remote after breaking previous
++-------------------------------------------+
+
+git remote set-url origin https://github.com/dalyw01/Scanner.git
+git pull origin master
+
++-----------------------------------------+
+If you have two-factor authentication
++-----------------------------------------+
+
+Make a token
+http://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed
+
++-----------------------------------------+
+Having problems pushing changes after changing password
++-----------------------------------------+
+
+https://stackoverflow.com/questions/29297154/github-invalid-username-or-password
+
+^ Create a new Personal Access Token
