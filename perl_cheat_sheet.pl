@@ -1,30 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @dalyw
-
-1
-0
-
-    0
-
-dalyw/PerlCheatSheet
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Settings
-PerlCheatSheet/cheat_sheet_perl.pl
-f4a5292 on 5 Jan
-@dalyw dalyw removing some comments
-398 lines (325 sloc) 12.1 KB
 use strict;
 use warnings;
 
