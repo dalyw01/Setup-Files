@@ -40,15 +40,9 @@ OTHER STUFF OF INTEREST!
 GIT (need to work on this :3)
 ++++++++++++++++++++++++++++
 
-ADD
-
-ADD
-
 COMMIT to gitHub
 
 BUILD with Jenkins
-
-COPY some commands from GIT
 
 POSTMAN stuff
 
