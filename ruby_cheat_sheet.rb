@@ -1,3 +1,5 @@
+require "json"
+
 puts "#################### Printing Variables ####################"
 
 a = "derp"
@@ -13,6 +15,35 @@ etc..
 
 puts "#################### Making A Class ####################"
 
+class Car
+    def initialize( new_color , new_make )
+        @color = new_color
+        @make  = new_make 
+    end
+
+    def getColor()
+        return @color
+    end
+
+    def getMake()
+        return @make
+    end
+
+    def setColor( new_color )
+        @color = new_color
+    end
+
+    def setMake( new_make )
+        @make = new_make
+    end
+
+    def getAllInfo()
+        print "Its currently a #{@color} #{@make}"
+    end
+end    
+
+puts "#################### Making A Class 2 ####################"
+
 class Animal
     attr_accessor :name, :age, :trait
 end
@@ -25,7 +56,7 @@ animal_1.age   = 20
 puts "#{animal_1.name}"
 puts "#{animal_1.age}"
 
-puts "#################### Inheritance ####################"
+puts "#################### Inheritance of Class 2 ####################"
 
 class Dog < Animal
     # Inhereting
@@ -48,10 +79,10 @@ fish_1.fins  = "yes he has fins"
 
 puts "#{fish_1.fins}"
 
-puts "#################### Objects With Methods ####################"
+puts "#################### Classes With Methods ####################"
 
 class Person
-
+  
     def talk
       puts "Hello how are you? :D"
     end
@@ -88,10 +119,8 @@ end
  
 if name == "Andrew"
     puts "Hello Andrew"
-
 elsif name == "medium"
     puts "derp"
-
 else
     puts "Hello someone else"
 end
@@ -220,6 +249,23 @@ student_ages =
     "Bob"  => 14
 }
 
+puts "\n#{student_ages}"
+
+puts "\nPutting KEYS into an array and outputting them!"
+
+name_array = student_ages.keys
+puts name_array
+
+puts "\nOutputting VALUES without putting them into an array!"
+
+hash = { "a"=>["1", "2", "3"], "b"=>["10", "11"] }
+puts hash.values
+
+puts "\nEditing just the VALUES of hash wii!"
+
+wii = {"a" => "x", "c" => "y"}
+wii.each{ |key,value| value.upcase! } # now contains {"a" => "X", "c" => "Y"}.
+puts wii
 
 puts "\n#################### Sorting Hash Ruby ####################"
 
@@ -228,7 +274,6 @@ temp.each do |x,y|
   @fileHtml.puts "<p>#{x} -> #{y}</p>"
 end
 @side_links.push("#{new_title}")
-
 
 puts "\n#################### Passing Hash's Into Functions ####################"
 
@@ -260,17 +305,85 @@ puts "\n#################### Concatenating In Ruby ####################\n"
 
 puts "STEP : Calling method [load_vpid] from [player_steps.rb] with paramaters [#{vpid}] , [#{kind}] , [#{env}] "
 
-    © 2017 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
+puts "\n#################### Cycling Through Ruby Arrays And Hashs ####################\n"
 
-    Contact GitHub
-    API
-    Training
-    Shop
-    Blog
-    About
+a = [1,2,3]
 
+puts a
+
+a.each do |item|
+	puts "#{item}"
+end
+
+puts "================================================================\n"
+
+shop = {
+		"food" => "cheese"
+	}
+
+puts shop
+
+shop.each do |k,v| 
+	puts "#{k} -----> #{v}"
+end
+
+puts "================================================================\n"
+
+hash = 	{
+			'qwe' => ['JAHAHAHAH'],
+			'rty' => 
+				{
+					'foo' 	=> 'this', 
+					'cool' 	=> 'guy'
+				}
+		}
+
+hash.each do |k,v|
+	puts k
+	puts v
+	puts "xxxxxxxxxxxxxxx"
+	v.each do |x,a|
+		puts "[#{x}] has a key of [#{a}]"
+	end
+	puts "xxxxxxxxxxxxxxx"
+end
+
+puts "================================================================\n"
+
+more_nested_array = [["hello", ["world", "new york"]], ["love", "ruby"]]
+
+more_nested_array.each do |element|
+  element.each do |inner_element|
+    if inner_element.is_a?(Array)
+      inner_element.each do |third_layer_element|
+        puts third_layer_element
+      end
+    end
+  end
+end
+
+puts "================================================================\n"
+
+holiday_supplies = {
+  "winter" => { 
+    "Christmas" => ["lights", "tree"],
+    "New Years" => "champagne glasses"
+  },
+  "summer" => {
+    "July Fourth" => ["BBQ", "flags"]
+  },
+  "spring" => {
+    "Memorial Day" => "BBQX"
+  },
+  "fall" => {
+    "Labor Day" => "hot dogs"
+  }
+}
+
+puts holiday_supplies
+ 
+holiday_supplies.each do |key, value|
+  value.each do |key2, value2|
+    puts value2
+  end
+end
