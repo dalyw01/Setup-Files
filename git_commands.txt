@@ -1,15 +1,6 @@
 +-----------------------------------------+
-Handy Links
+Basic Git Commands
 +-----------------------------------------+
-
-Branch basics - https://www.youtube.com/watch?v=LbanWJyLMnA
-Working with other peoples projects - https://www.youtube.com/watch?v=W7oR8-9H0gs
-http://james-ramsden.com/git-create-new-branch-push-bitbucket/
-
-+-----------------------------------------+
-General Git Commands
-+-----------------------------------------+
-
 git --version
 git config --global user.name 
 git config --global user.email
@@ -21,8 +12,6 @@ git diff
 git add derp.rb
 git add willsonite_1/*                  <- To add directory and all its contents
 git add .
-git status
-git commit -m "Adding derp"
 
 git checkout index.html                 <- Reverting to repo copy from your (probably bad) working copy
 git checkout 53283cd --index.html       <- How to change to version "53283cd" of file "index.html"
@@ -96,13 +85,6 @@ Setting a new remote after breaking previous
 
 git remote set-url origin https://github.com/dalyw01/Scanner.git
 git pull origin master
-
-+-----------------------------------------+
-If you have two-factor authentication
-+-----------------------------------------+
-
-Make a token
-http://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed
 
 +-----------------------------------------+
 Having problems pushing changes after changing password
