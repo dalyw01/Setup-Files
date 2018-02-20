@@ -1,7 +1,14 @@
     #------------------------------------------------------------------------
+    # Some Ruby commands that might require configuring gems
+    #------------------------------------------------------------------------
+          
+    List gems       - gem list
+    Update all gems - bundle update
+    
+    #------------------------------------------------------------------------
     # General tips for setting it up
     #------------------------------------------------------------------------
-  
+        
     Set up your cucumber.yml file AT(!) the following
   
     /Users/dalyw01/Desktop/Test/Cucumber/config
