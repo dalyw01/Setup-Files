@@ -44,6 +44,8 @@
 
     page.driver.browser.manage.window.maximize()
     page.driver.browser.manage.window.resize_to( 1440, 800 )
+    
+    page.execute_script "window.scrollBy(0,10000)" # Scroll down the page with the browser
   
     #------------------------------------------------------------------------
     # Opening New Tabs
