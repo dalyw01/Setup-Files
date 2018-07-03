@@ -1,12 +1,12 @@
     #------------------------------------------------------------------------
-    # Some Ruby commands that might require configuring gems
+    # Some Ruby Commands When Stuff Stops Working
     #------------------------------------------------------------------------
           
     List gems       - gem list
     Update all gems - bundle update
     
     #------------------------------------------------------------------------
-    # General tips for configuring your setup once Cucumber is installed
+    # General Tips For Configuring Once Cucumber Is Installed
     #------------------------------------------------------------------------
         
     Set up your cucumber.yml file in the following directory
@@ -29,7 +29,7 @@
     cucumber features/core_functionality.feature:39 BROWSER=firefox
   
     #------------------------------------------------------------------------
-    # General commands with a browser
+    # General Commands For Browsers
     #------------------------------------------------------------------------
 
     visit( 'http://www.google.co.uk')
@@ -46,7 +46,7 @@
     page.driver.browser.manage.window.resize_to( 1440, 800 )
   
     #------------------------------------------------------------------------
-    # Opening a new tab
+    # Opening New Tabs
     #------------------------------------------------------------------------  
 
     within_window open_new_window do
@@ -58,7 +58,24 @@
     end
 
     #------------------------------------------------------------------------
-    # Clicking elements
+    # Verifying Content Exists On Page
+    #------------------------------------------------------------------------
+
+    find('#seek_in_halves').hover                       
+    find( "a" , text: "Opt out of the HTML5 Player" )   
+    find("h1").should have_content("Shoes")
+
+    # Expecting page to have certain text inside a certain div + tag
+    expect(page).to have_css("#generated_errors td", text: new_error_message )  
+    expect(page).to have_css("#generated_errors a" , text: new_playlist )
+    
+    page.should have_content('lolacopterdaly')          # From ETSY, a field is populated from firstname + lastname fields
+    expect(page).to have_title "Cucumber - Wikipedia"   # Just part of the actual title "Cucumber - Wikipedia, the free encyclopedia"
+
+    assert_selector('div.heading', text: 'Create an Etsy account and start shopping') 
+
+    #------------------------------------------------------------------------
+    # Clicking SINGLE Elements
     #------------------------------------------------------------------------
 
     page.first('#derp').click                           # derp    is a button with an ID
@@ -66,12 +83,17 @@
 
     click_link "Cucumber - Wikipedia"                   # First listed result from a Google search query
     click_link( "Opt in to the HTML5 Player" )          # Another example of using click LINK
+    
     click_button( "OK" )
     click_button( "Yes, I agree" )
   
     find('a.pr-xs-3', :text => 'Shoes').click           # "Shoes" is text for an "a" element link under CLASS pr-xs-3
-    find("span", text: "Flash").click
+    find("span", text: "Flash").hover
     find( "a" , text: new_code ).click
+  
+    #------------------------------------------------------------------------
+    # Clicking Multiple Elements
+    #------------------------------------------------------------------------
   
     # Using table from Scenario Outline
     When(/^I click on error code - "([^"]*)"$/) do |new_code|
@@ -84,42 +106,15 @@
     page.all(:css, '.refbutton').each do |item|
       puts item.click
     end
-  
-    # Clicks on every single li in the class .p_volumeBar
-    page.all(:css, '.p_volumeBar').each do |item|
-      item.click
-      new_array.push( item.native.css_value('left') ) # Gets the css proprty "left" for the current item
-    end
-
-    # Flash players
-    page.first('#smp-flashSWFmp').click
 
     #------------------------------------------------------------------------
-    # Verifying content exists on a page
+    # Counting Number Elements On Page
     #------------------------------------------------------------------------
-
-    find('#seek_in_halves').hover                       # Hover over button
-    find( "a" , text: "Opt out of the HTML5 Player" )   # Good to verify something exists on a page
-    find('a.pr-xs-3', :text => 'Shoes').hover           # Hover over certain link in CLASS pr-xs-3
-    find("h1").should have_content("Shoes")             # If you expect a certain element to have certain text
-
-    # Expecting page to have certain text inside a certain div + tag
-    expect(page).to have_css("#generated_errors td", text: new_error_message )  
-    expect(page).to have_css("#generated_errors a" , text: new_playlist )
-  
-    page.should have_content('lolacopterdaly')          # From ETSY, a field is populated from firstname + lastname fields
-    expect(page).to have_title "Cucumber - Wikipedia"   # Just part of the actual title "Cucumber - Wikipedia, the free encyclopedia"
 
     page.all(".refbutton").count                        # Counts every instance of the class .refbutton
     page.all("li").count                                # Counts all li elements on page
     page.all(".pl-xs-0 li").count                       # Number of li elements INSIDE the class .pl-xs-0
-    page.all(".pl-xs-0 li").count.should eql(8)         # Different way instead of using IF statement
-
-    # This checks a specific class with name "heading"
-    assert_selector('div.heading', text: 'Create an Etsy account and start shopping') 
-    # This checks a specific id with name "test", haven't tried it yet!
-    assert_selector('div#test', text: '')                                             
-
+    page.all(".pl-xs-0 li").count.should eql(8)         # Different way instead of using IF statement                                         
     #------------------------------------------------------------------------
     # Copy + Pasting
     #------------------------------------------------------------------------
@@ -139,32 +134,25 @@
     #------------------------------------------------------------------------
     # Keyboard commands
     #------------------------------------------------------------------------
-    
-    # https://docs.omniref.com/ruby/gems/frameworks-capybara/0.2.18/symbols/SendKeys
-    # Quick examples below!
 
     find(:id, 'smpj2ooiframemedia_player').native.send_keys(:tab)
     find(:id, 'smpj2ooiframemedia_player').native.send_keys(:arrow_down)
     find(:id, 'smpj2ooiframemedia_player').native.send_keys(:arrow_up)
     find(:id, 'smpj2ooiframemedia_player').native.send_keys(:enter)
     
-    # Here's an example of hooking onto ID and tabbing from there!
-    find(:id, 'first-name').native.send_keys(:tab)
-    fill_in 'last_name', :with => "DALY"
-
+    find(:id, 'first-name').native.send_keys(:tab) # Example of hooking onto ID and tabbing from there!
+  
     #------------------------------------------------------------------------
     # Text-fields (Example from google.co.uk)
     #------------------------------------------------------------------------
 
     When( /^I am on Google$/ ) do
-        fill_in 'q', :with => "cucumber\n" # q is the text-box
-    end                                    # \n is equivalent to pressing ENTER
-
-    # (Example from https://www.etsy.com/uk/join)
-    
+        fill_in 'q', :with => "cucumber\n" # q is the text-box, \n is equivalent to pressing ENTER
+    end
+  
     When(/^I enter all the fields with valid data$/) do
       page.first('#first-name').click
-      fill_in 'first_name', :with => "LOLACOPTER" # Don't have /n as it prompts errors to finish other fields in the form
+      fill_in 'first_name', :with => "LOLACOPTER"
     end
 
     #------------------------------------------------------------------------
@@ -176,20 +164,20 @@
     page.execute_script( 'alert("Here is an alert!");')
     page.driver.browser.switch_to.alert.accept
     
-    page.execute_script( 'var volume_div = document.getElementById("button_menu");
-                          volume_div.innerHTML += "<p> "+ mediaPlayer.volume() + "</p>";' )
-
+    page.execute_script( 
+                         'var volume_div = document.getElementById("button_menu");
+                          volume_div.innerHTML += "<p> "+ mediaPlayer.volume() + "</p>";' 
+                        )
 
     final_volume = page.execute_script( 'return(mediaPlayer.volume() );')
 
-    # If its MUTED then UNMUTE it by pressing ENTER on the VOLUME icon
     if ( page.execute_script('return(mediaPlayer.muted());') == true )
       find(:id, 'smpj2ooiframemedia_player').native.send_keys(:enter)
       sleep(1)
     end
 
     #------------------------------------------------------------------------
-    # Chunk of code to add into env.rb file to stop killing browser session
+    # Chunk Of Code In env.rb File To Stop Killing Browser Session
     #------------------------------------------------------------------------
 
     Capybara::Selenium::Driver.class_eval do
@@ -203,14 +191,27 @@
     end
 
     #------------------------------------------------------------------------
-    # Ruby ASSERTS 
+    # Ruby Asserts
     #------------------------------------------------------------------------
-    # Like -> https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    # Quick examples below!
-  
+
     final_volume = page.execute_script( 'return(mediaPlayer.volume() );')
-  
+
     expect(final_volume).to eq(1)
     expect(final_volume).to be_between(0.9, 1.1).inclusive
     expect(final_volume).to be_between(0.9, 1.1)
     expect(final_volume).to be <= 1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
