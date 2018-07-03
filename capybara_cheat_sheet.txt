@@ -6,16 +6,16 @@
     Update all gems - bundle update
     
     #------------------------------------------------------------------------
-    # General tips for setting it up
+    # General tips for configuring your setup once Cucumber is installed
     #------------------------------------------------------------------------
         
-    Set up your cucumber.yml file AT(!) the following
+    Set up your cucumber.yml file in the following directory
   
     /Users/dalyw01/Desktop/Test/Cucumber/config
     MC-S104581:config dalyw01$ ls
     cucumber.yml
   
-    Set up your cucumber.yml file WITH(!) the following
+    Write on your cucumber.yml file the following
   
     default: BROWSER=chrome
     firefox: BROWSER=firefox
@@ -26,6 +26,7 @@
     cucumber features/errors_checker.feature:19 -p default
     cucumber features/errors_checker.feature:19 -p firefox
     cucumber features/errors_checker.feature -p safari --tags @FLASH
+    cucumber features/core_functionality.feature:39 BROWSER=firefox
   
     #------------------------------------------------------------------------
     # General commands with a browser
@@ -65,22 +66,19 @@
 
     click_link "Cucumber - Wikipedia"                   # First listed result from a Google search query
     click_link( "Opt in to the HTML5 Player" )          # Another example of using click LINK
-
+    click_button( "OK" )
+    click_button( "Yes, I agree" )
+  
+    find('a.pr-xs-3', :text => 'Shoes').click           # "Shoes" is text for an "a" element link under CLASS pr-xs-3
+    find("span", text: "Flash").click
+    find( "a" , text: new_code ).click
+  
     # Using table from Scenario Outline
     When(/^I click on error code - "([^"]*)"$/) do |new_code|
       if new_code == "1005" or new_code == "3024"
         page.first( "a" , text: new_code ).click
       end
     end
-  
-    # Click every button on CookBook 
-    page.all(:css, '.refbutton').each do |item|
-      puts item.click
-    end
-
-    find('a.pr-xs-3', :text => 'Shoes').click           # "Shoes" is text for an "a" element link under CLASS pr-xs-3
-    find("span", text: "Flash").click
-    find( "a" , text: new_code ).click
 
     # Clicks on every single BUTTON in the class .refButton
     page.all(:css, '.refbutton').each do |item|
@@ -105,19 +103,22 @@
     find('a.pr-xs-3', :text => 'Shoes').hover           # Hover over certain link in CLASS pr-xs-3
     find("h1").should have_content("Shoes")             # If you expect a certain element to have certain text
 
-    expect(page).to have_css("#generated_errors td", text: new_error_message )  # Expecting page to have certain text inside a certain div + tag
+    # Expecting page to have certain text inside a certain div + tag
+    expect(page).to have_css("#generated_errors td", text: new_error_message )  
     expect(page).to have_css("#generated_errors a" , text: new_playlist )
   
     page.should have_content('lolacopterdaly')          # From ETSY, a field is populated from firstname + lastname fields
-    expect(page).to have_title "Cucumber - Wikipedia"   # This is just part of the actual title "Cucumber - Wikipedia, the free encyclopedia"
+    expect(page).to have_title "Cucumber - Wikipedia"   # Just part of the actual title "Cucumber - Wikipedia, the free encyclopedia"
 
     page.all(".refbutton").count                        # Counts every instance of the class .refbutton
     page.all("li").count                                # Counts all li elements on page
     page.all(".pl-xs-0 li").count                       # Number of li elements INSIDE the class .pl-xs-0
     page.all(".pl-xs-0 li").count.should eql(8)         # Different way instead of using IF statement
 
-    assert_selector('div.heading', text: 'Create an Etsy account and start shopping') # This checks a specific class with name "heading"
-    assert_selector('div#test', text: '')                                             # This checks a specific id with name "test", haven't tried it yet!
+    # This checks a specific class with name "heading"
+    assert_selector('div.heading', text: 'Create an Etsy account and start shopping') 
+    # This checks a specific id with name "test", haven't tried it yet!
+    assert_selector('div#test', text: '')                                             
 
     #------------------------------------------------------------------------
     # Copy + Pasting
@@ -138,6 +139,7 @@
     #------------------------------------------------------------------------
     # Keyboard commands
     #------------------------------------------------------------------------
+    
     # https://docs.omniref.com/ruby/gems/frameworks-capybara/0.2.18/symbols/SendKeys
     # Quick examples below!
 
@@ -172,9 +174,7 @@
     page.execute_script('embeddedMedia.players[0].play();')
     page.execute_script( 'mediaPlayer.updateUiConfig({"controls": {"always": "true"}});')
     page.execute_script( 'alert("Here is an alert!");')
-    
     page.driver.browser.switch_to.alert.accept
-    
     
     page.execute_script( 'var volume_div = document.getElementById("button_menu");
                           volume_div.innerHTML += "<p> "+ mediaPlayer.volume() + "</p>";' )
@@ -213,4 +213,4 @@
     expect(final_volume).to eq(1)
     expect(final_volume).to be_between(0.9, 1.1).inclusive
     expect(final_volume).to be_between(0.9, 1.1)
-expect(final_volume).to be <= 1
+    expect(final_volume).to be <= 1
