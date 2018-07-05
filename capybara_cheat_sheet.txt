@@ -76,6 +76,15 @@
 
     assert_selector('div.heading', text: 'Create an Etsy account and start shopping') 
 
+    if page.first("#bbcprivacy-continue-button")
+      click_button( "OK" )
+    end
+    
+    if page.first(".p_subtitleButton")
+      page.first(".p_subtitleButton").click
+      sleep(1)
+    end
+
     #------------------------------------------------------------------------
     # Clicking SINGLE Elements
     #------------------------------------------------------------------------
