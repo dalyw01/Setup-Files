@@ -9,5 +9,10 @@ http://ruby-doc.org/core-2.1.5/Enumerator.html
 http://www.korenlc.com/nested-arrays-hashes-loops-in-ruby/
 http://www.rubyist.net/~slagell/ruby/objinitialization.html
 
-# Firefox 
+# Tools
+https://www.browserstack.com/
 https://ftp.mozilla.org/pub/firefox/releases/
+
+# Accessibility
+https://webaim.org/projects/screenreadersurvey7/
+https://www.powermapper.com/tests/screen-readers/labelling/area-aria-label/
