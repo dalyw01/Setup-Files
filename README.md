@@ -16,3 +16,4 @@ Some helpful guides to refresh my memory!
 # Accessibility
 - https://webaim.org/projects/screenreadersurvey7/
 - https://www.powermapper.com/tests/screen-readers/labelling/area-aria-label/
+- http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile/summary
