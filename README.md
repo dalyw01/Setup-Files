@@ -8,3 +8,6 @@ https://www.dotnetperls.com/split-ruby
 http://ruby-doc.org/core-2.1.5/Enumerator.html
 http://www.korenlc.com/nested-arrays-hashes-loops-in-ruby/
 http://www.rubyist.net/~slagell/ruby/objinitialization.html
+
+# Firefox 
+https://ftp.mozilla.org/pub/firefox/releases/
