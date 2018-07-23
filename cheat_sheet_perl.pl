@@ -34,6 +34,7 @@ if ( $type ne "pers" and $type ne "pre" )
 #----------------------------------------------------------------------------------------
 # Function:     printBanner
 # Description:  Function that takes in a string + symbol and prints it to a banner
+# Example:      printBanner( HEADING => "[ALLOCATE TOOL]" , SYMBOL => "XXXXXXXXXX" );
 #----------------------------------------------------------------------------------------
 
 sub printBanner
@@ -52,6 +53,7 @@ sub printBanner
 #----------------------------------------------------------------------------------------
 # Function:     executeAndOutputCmd
 # Description:  ...
+# Example:      executeAndOutputCmd( COMMAND => "-sid $sid -devs $devs_param not_ready -nop" );
 #----------------------------------------------------------------------------------------
 
 sub executeAndOutputCmd
@@ -71,6 +73,7 @@ sub executeAndOutputCmd
 #----------------------------------------------------------------------------------------
 # Function:     getTestLatestLogFile
 # Description:  ....
+# Example:      getTestLatestLogFile( ID => $test_id );
 #----------------------------------------------------------------------------------------
 
 sub getTestLatestLogFile
@@ -102,6 +105,7 @@ sub getTestLatestLogFile
 #----------------------------------------------------------------------------------------
 # Function:     getAllSmartBuilderTestDevs
 # Description:  ...    
+# Example:      getAllSmartBuilderTestDevs( ID => $test_id, LOG_FILE => $latest_log );
 #----------------------------------------------------------------------------------------
 
 sub getAllSmartBuilderTestDevs
@@ -150,6 +154,7 @@ sub getAllSmartBuilderTestDevs
 #----------------------------------------------------------------------------------------
 # Function:     getSpecificDevs
 # Description:  ...
+# Example:      getSpecificDevs( LABEL => $dev_label , DEVS => \%all_sb_devs )
 #----------------------------------------------------------------------------------------
 
 sub getSpecificDevs
@@ -217,6 +222,7 @@ sub getSpecificDevs
 #----------------------------------------------------------------------------------------
 # Function:     cleanDevs
 # Description:  ...
+# Example:      cleanDevs( DEVS => \@return_devs ); # Encase duplicates are present   
 #----------------------------------------------------------------------------------------
 
 sub cleanDevs
@@ -231,6 +237,7 @@ sub cleanDevs
 #----------------------------------------------------------------------------------------
 # Function:     allocateAndDeallocate
 # Description:  ...
+# Example:      allocateAndDeallocate( DEVS => \@alloc_devs );
 #----------------------------------------------------------------------------------------
 
 sub allocateAndDeallocate
@@ -295,6 +302,9 @@ sub allocateAndDeallocate
 #----------------------------------------------------------------------------------------
 # Function:     checkAllocationLevel
 # Description:  ...
+# Example:      checkAllocationLevel(   COMMAND      => "list -sid $sid -tdev -devs $devs_param",
+#                                       PERCENTAGE   => 0,
+#                                       MAX_ATTEMPTS => 10 );
 #----------------------------------------------------------------------------------------
 
 sub checkAllocationLevel
