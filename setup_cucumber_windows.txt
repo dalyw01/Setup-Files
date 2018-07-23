@@ -6,7 +6,6 @@ Go here for most of the info you'll need! - https://www.spritecloud.com/2015/04/
 
 Do NOT install - "watir-webdriver" (It's been deprecated)
 
-
 I downloaded "devkit" into the same directory where RUBY is installed (usually C:\ drive) alongside 
 	bins
 	doc
