@@ -1,15 +1,15 @@
 ++++++++++++++++++++
 Setup Charles on OSX
-+++++++++++++++++++++
+++++++++++++++++++++
 - Green ETHERNET cable in
 - Network share ON
 - Wi-fi OFF
 - Location OFF
 - Start running CHARLES
 
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 Connect Android device to laptop
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 - Go to SETTINGS
 - Tap + Hold that network name
 - Tap Modify Network
@@ -19,24 +19,24 @@ Connect Android device to laptop
 - Proxy Port     = 8888
 - Connect to the PC you’ve configured
 
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++
 Connect Ios device to laptop
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++
 - Go to SETTINGS
 - Under HTTP Proxy
 - Server = IP of PC (e.g 192.168.3.121 USUALLY)
 - Port   = 8888
 - Authentication OFF
 
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++
 Note when connecting devices
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++
 + You can connect to a PC WITHOUT setting hostname + port
 + However if you don't then the info will not be collected in Charles
 
-+++++++++++++++++++
++++++++++++++++++
 HTTPS working iOS
-+++++++++++++++++++
++++++++++++++++++
 + Get device (used iOS11)
 + Connect to your laptop
 + Use SAFARI
