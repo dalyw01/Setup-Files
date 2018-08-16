@@ -77,9 +77,9 @@ POOL STAT E  CNT SRP  SLE TECH PROT   POOL_NAME    FLG DG USED PACK USSL
 
 # Example 4
 
-I want the dates for all the log entries 
+I want the dates and log names e.g "Dec 16 11:09 85983_0000.log"
 
-rw-r--r-- 1 root root   9136 Dec 16 11:09 85983_0000.log
+-rw-r--r-- 1 root root   9136 Dec 16 11:09 85983_0000.log
 -rw-r--r-- 1 root root   7999 Dec 16 11:19 91983_0001.log
 -rw-r--r-- 1 root root   6866 Dec 16 11:25 91983_0002.log
 -rw-r--r-- 1 root root   6866 Dec 16 13:51 91983_0003.log
