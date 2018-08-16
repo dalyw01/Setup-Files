@@ -40,7 +40,7 @@ I use this site - https://regex101.com/
 - \s                         Space
 - \n                         New line
 - {3}                        Combine this with any of the above to specify a size
-- +                          How to concatenate
+- \S+\d                      How to concatenate
 - .*                         How to say you don’t care what you see after a certain phrase
 - [^a-zA-Z0-9]               Not a letter or integer (e.g Symbols or Chinese characters)
 
@@ -73,8 +73,23 @@ POOL STAT E  CNT SRP  SLE TECH PROT   POOL_NAME    FLG DG USED PACK USSL
           TDATS:  FFFEA-FFFEF
 002 AVAL F   1A   1  2ms EFD  R5/3+1 DG1_FBA_F    ...  1   1% 
 
-
 -> USSL\s+([0-9a-fA-F]{3})
 
+# Example 4
 
+I want the dates for all the log entries 
+
+rw-r--r-- 1 root root   9136 Dec 16 11:09 85983_0000.log
+-rw-r--r-- 1 root root   7999 Dec 16 11:19 91983_0001.log
+-rw-r--r-- 1 root root   6866 Dec 16 11:25 91983_0002.log
+-rw-r--r-- 1 root root   6866 Dec 16 13:51 91983_0003.log
+-rw-r--r-- 1 root root  10762 Dec 16 14:11 91983_0004.log
+-rw-r--r-- 1 root root   9685 Dec 16 14:23 85983_0005.log
+-rw-r--r-- 1 root root  12106 Dec 16 14:32 91983_0006.log
+-rw-r--r-- 1 root root  14792 Dec 16 14:52 85983_0007.log
+-rw-r--r-- 1 root root  12224 Dec 16 15:00 85983_0008.log
+-rw-r--r-- 1 root root   7527 Dec 16 15:07 85983_0009.log
+-rw-r--r-- 1 root root   8095 Dec 16 15:13 85983_0010.log
+
+-> \d{2}\s+(.*.log)$
 
