@@ -35,6 +35,8 @@
     visit( 'http://www.google.co.uk')
 
     sleep(2)
+    
+    refresh()
 
     if page.driver.browser.browser == :firefox
       page.driver.browser.manage.window.maximize()
@@ -125,7 +127,8 @@
     page.all(".refbutton").count                        # Counts every instance of the class .refbutton
     page.all("li").count                                # Counts all li elements on page
     page.all(".pl-xs-0 li").count                       # Number of li elements INSIDE the class .pl-xs-0
-    page.all(".pl-xs-0 li").count.should eql(8)         # Different way instead of using IF statement                                         
+    page.all(".pl-xs-0 li").count.should eql(8)         # Different way instead of using IF statement                                   
+
     #------------------------------------------------------------------------
     # Copy + Pasting
     #------------------------------------------------------------------------
