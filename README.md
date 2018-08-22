@@ -24,7 +24,7 @@ Some helpful guides to refresh my memory!
 # Tools
 - https://www.browserstack.com/
 - https://ftp.mozilla.org/pub/firefox/releases/
-- https://mrcoles.com/bookmarklet/ < Great for creating bookmarklets and executing javascript on a page
+- https://mrcoles.com/bookmarklet/ < Great for creating bookmarklets and executing javascript on a page (javasript:alert() for mobile)
 
 # Accessibility
 - https://webaim.org/projects/screenreadersurvey7/
