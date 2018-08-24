@@ -20,6 +20,13 @@ Some helpful guides to refresh my memory!
 
 # Javascript
 - http://www.phpied.com/3-ways-to-define-a-javascript-class/
+- To run Javsacript in Android (perhaps putting in a cookie) type into your URL bar -> javascript:alert();
+- To run Javascript on iOS (perhaps putting in a cookie) 
+-- Visit google.com or some other random site
+-- Bookmark it (using the share button)
+-- Go to your bookmarks and tap edit
+-- Select your placeholder bookmark and enter your code in the address field
+-- Save the changes
 
 # Tools
 - https://www.browserstack.com/
