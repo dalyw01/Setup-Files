@@ -29,6 +29,8 @@ Some helpful guides to refresh my memory!
 -- Save the changes
 
 # Tools
+- https://www.w3counter.com/globalstats.php?year=2018&month=8
+- http://gs.statcounter.com/browser-market-share/all/ireland
 - https://www.browserstack.com/
 - https://ftp.mozilla.org/pub/firefox/releases/
 - https://mrcoles.com/bookmarklet/ < Great for creating bookmarklets and executing javascript on a page (javasript:alert() for mobile)
