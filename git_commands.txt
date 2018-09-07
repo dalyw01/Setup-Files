@@ -1,23 +1,12 @@
 +-----------------------------------------+
 Basic Git Commands
 +-----------------------------------------+
-git --version
-git config --global user.name 
-git config --global user.email
-git config --list
-git help commit
-git log
-git diff
-
 git add derp.rb
 git add willsonite_1/*                  <- To add directory and all its contents
 git add .
 
 git checkout index.html                 <- Reverting to repo copy from your (probably bad) working copy
 git checkout 53283cd --index.html       <- How to change to version "53283cd" of file "index.html"
-
-git mv second.txt pudding.txt           <- Rename file "second.txt", add + commit afterwards)
-git mv pudding.txt LoveNotes/patty.txt  <- Rename + move file "pudding.txt" , add + commit afterwards)
 
 git reset HEAD profile.html             <- How to UNSTAGE a file "profile.html")
 
@@ -50,7 +39,7 @@ Push to master
 - git push origin new_dev_branch
 
 +------------------------------------------------------------------------------------------+
-Downloading online repo code, setting up new branch from it and commiting to the NEW branch
+Downloading online repo code, setting up new branch from + commiting to the NEW branch
 +------------------------------------------------------------------------------------------+
 
 Make a new folder:
@@ -79,17 +68,27 @@ Upload (“push“) your changes to the repository:
 
 Check github and you'll see a new branch has been created!
 
++------------------------------------------------------------------------------------------+
+Downloading specific branch of a repo
++------------------------------------------------------------------------------------------+
+
+Make a folder and enter it
+- mkdir apple
+- cd apple
+
+Download the branch "NihalBranch" from project "Test-Combos-For-Web" owned by dalyw01 into apple
+- git clone -b NihalBranch git@github.com:dalyw01/Test-Combos-For-Web.git
+
+Jump into the folder
+- cd Test-Combos-For-Web/
+
+Verify on different branch
+- git branch
+* NihalBranch
+
 +-------------------------------------------+
 Setting a new remote after breaking previous
 +-------------------------------------------+
 
 git remote set-url origin https://github.com/dalyw01/Scanner.git
 git pull origin master
-
-+-----------------------------------------+
-Having problems pushing changes after changing password
-+-----------------------------------------+
-
-https://stackoverflow.com/questions/29297154/github-invalid-username-or-password
-
-^ Create a new Personal Access Token
