@@ -8,6 +8,11 @@ Some helpful guides to refresh my memory!
 - https://www.reddit.com/r/programming/comments/1updk2/dijkstra_on_haskell_and_java/cekffk0/
 
 # Ruby
+- gem list
+- gem update
+- bundle install
+- gem install capybara
+- https://rubygems.org/gems/capybara
 - https://stackoverflow.com/questions/9279768/how-do-i-loop-over-a-hash-of-hashes-in-ruby
 - https://www.twilio.com/blog/2015/10/4-ways-to-parse-a-json-api-with-ruby.html
 - https://stackoverflow.com/questions/5410682/parsing-a-json-string-in-ruby
