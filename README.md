@@ -8,16 +8,6 @@ Some helpful guides to refresh my memory!
 - https://www.reddit.com/r/programming/comments/1updk2/dijkstra_on_haskell_and_java/cekffk0/
 
 # Ruby
-- If updating Ruby for first time on Mac
-- ruby -v
-- curl -L https://get.rvm.io | bash -s stable <- Installs homebrew 
-- source /Users/dalyw01/.rvm/scripts/rvm  <- Switchs to package manager
-- rvm install ruby-2.4.1 <- Now this will work
-- gem install cucumber
-- gem install capybara
-- gem list
-- gem update
-
 - https://rubygems.org/gems/capybara
 - https://stackoverflow.com/questions/9279768/how-do-i-loop-over-a-hash-of-hashes-in-ruby
 - https://www.twilio.com/blog/2015/10/4-ways-to-parse-a-json-api-with-ruby.html
@@ -28,6 +18,17 @@ Some helpful guides to refresh my memory!
 - http://www.rubyist.net/~slagell/ruby/objinitialization.html
 - http://www.korenlc.com/nested-arrays-hashes-loops-in-ruby/
 - https://www.foragoodstrftime.com/
+
+# Setting up Cucumber OSX
+- If updating Ruby for first time on Mac
+- ruby -v
+- curl -L https://get.rvm.io | bash -s stable     <- Installs homebrew 
+- source /Users/dalyw01/.rvm/scripts/rvm          <- Switchs to package manager
+- rvm install ruby-2.4.1                          <- Now this will work
+- bundle install                                  <- Should install everything you need for Cucumber
+- bundle update
+- gem list
+- gem update
 
 # Javascript
 - http://www.phpied.com/3-ways-to-define-a-javascript-class/
