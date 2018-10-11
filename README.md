@@ -29,6 +29,9 @@ Some helpful guides to refresh my memory!
 - bundle update
 - gem list
 - gem update
+- brew tap homebrew/cask
+- brew install chromedriver
+- cucumber features/audio_player.feature -t @Simulcast
 
 # Javascript
 - http://www.phpied.com/3-ways-to-define-a-javascript-class/
