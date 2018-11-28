@@ -1,0 +1,92 @@
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+                            Specify Firefox
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+@-moz-document url-prefix()
+{
+	#headerBar
+	{
+		background-color : red;	
+	}
+}
+
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+                            Specify Chrome
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	#headerBar
+	{
+		background-color : red;	
+	}
+}
+
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+                                Borders
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+border: 1px solid #E2E2E2 ;
+
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+                            Removing Hyperlinks
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+list-style : none;
+text-decoration : none;
+display : inline;
+
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+                            Create navbar
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+nav /*Blue navigation bar at the top*/
+{
+    position: fixed;
+    width: 110%;
+    height: 40px;
+    color: white;
+    margin-top: -17px;
+    margin-left: -8px;
+    z-index: 10;  /*Makes it appear over other elements*/
+    opacity: 0.9; /*Gives it the transparent look*/
+    background-color: red;
+}
+
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+                            Add padding
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+padding-top    : 10px;
+padding-bottom : 25px;
+padding-right  : 50px;
+padding-left   : 50px;
+
+or
+
+padding : 30px;
+
+
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+                        Responsive for web 
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+@media screen and (max-width: 1024px) and (orientation : portrait) 
+{
+
+    #links
+    {
+        width : 250px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation : landscape) 
+{
+    .caption,.title
+    {
+        font-size   : 1.5em;
+        font-weight : bold;
+    }
+}
+
+/* ---------------------- */

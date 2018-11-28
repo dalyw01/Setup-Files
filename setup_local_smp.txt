@@ -2,8 +2,6 @@
 EMBEDDING A MEDIA PLAYER
 ++++++++++++++++++++++++++++
 
-sudo pico /etc/hosts
-
 mc-s104581:~ dalyw01$ ls
 Applications		Downloads					Movies			Public						audio_clips_test.txt
 Desktop					Library						Music				Text-1.txt				test.csv

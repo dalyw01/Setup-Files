@@ -1,0 +1,59 @@
+++++++++++++++++++++
+Setup Charles on OSX
+++++++++++++++++++++
+- Green ETHERNET cable in
+- Network share ON
+- Wi-fi OFF
+- Location OFF
+- Start running CHARLES
+
+++++++++++++++++++++++++++++++++
+Connect Android device to laptop
+++++++++++++++++++++++++++++++++
+- Go to SETTINGS
+- Tap + Hold that network name
+- Tap Modify Network
+- Tap Advanced Options
+- Tap Proxy Manual
+- Proxy hostname = [Apple Logo] -> [System Preferences] -> Network
+- Proxy Port     = 8888
+- Connect to the PC you’ve configured
+
+++++++++++++++++++++++++++++
+Connect Ios device to laptop
+++++++++++++++++++++++++++++
+- Go to SETTINGS
+- Under HTTP Proxy
+- Server = IP of PC (e.g 192.168.3.121 USUALLY)
+- Port   = 8888
+- Authentication OFF
+
+++++++++++++++++++++++++++++
+Note when connecting devices
+++++++++++++++++++++++++++++
++ You can connect to a PC WITHOUT setting hostname + port
++ However if you don't then the info will not be collected in Charles
+
++++++++++++++++++
+HTTPS working iOS
++++++++++++++++++
++ Get device (used iOS11)
++ Connect to your laptop
++ Use SAFARI
++ Download file - NAMEXYZ.mobileconfig
++ Install profile
++ Press Done
++ Turn on SSL trust for that certificate - 
++ Settings > General > About > Certificate Trust Settings. 
++ Under "Enable full trust for root certificates," turn on trust for the certificate.
+
+++++++++++++++++++++++++++
+HTTPS working with Android
+++++++++++++++++++++++++++
++ Get device (SGS7 on Android 8)
++ Download onto the device - NAMEXYZW.cert.pem
++ Name the file whatever
++ You maye be ptomped to setup a lock-screen
++ Go to - Security Settings -> View Security Certificates -> User
++ The cert you named should be under the "User" section
+

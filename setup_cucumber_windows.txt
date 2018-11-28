@@ -1,0 +1,61 @@
++-----------------------------------+
+Quick setup of Cucumber for Windows!
++-----------------------------------+
+
+Go here for most of the info you'll need! - https://www.spritecloud.com/2015/04/complete-setup-guide-for-ruby-cucumber-and-watir-on-windows/
+
+Do NOT install - "watir-webdriver" (It's been deprecated)
+
+I downloaded "devkit" into the same directory where RUBY is installed (usually C:\ drive) alongside 
+	bins
+	doc
+	include
+	etc
+
+Inside "devkit" I had files like 
+	dk.rb
+	devkitvars.bat
+	msys.bat
+
+Go here if you're getting an SSL errror from above link - http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages 
+
+Download  "rubygems-update-2.6.7.gem"  and place inside "devkit" directory
+
++-----------------------------------+
+Setting up Cucumber tests
++-----------------------------------+
+
+Go to a place you want to setup you're cucumber suite of tests and type "cucumber --init"
+
+PS C:\Users\WillD\Desktop\asdsadad> cucumber --init
+*** WARNING: You must use ANSICON 1.31 or higher (https://github.com/adoxa/ansicon/) to get coloured output on Windows
+  create   features
+  create   features/step_definitions
+  create   features/support
+  create   features/support/env.rb
+
+PS C:\Users\WillD\Desktop\asdsadad> ls
+
+
+    Directory: C:\Users\WillD\Desktop\asdsadad
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       03/04/2018     19:11                features
+
++-----------------------------------+
+Download Chrome web driver
++-----------------------------------+
+
+Go here to download - https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+Extract chrome webdriver and place in - C:\Windows 
+
++-----------------------------------+
+Running a test
++-----------------------------------+
+
+To run a test on a particular line with a particular browser -
+
+cucumber .\features\core_functionality.feature:99 BROWSER=chrome
