@@ -1,13 +1,4 @@
 +-----------------------------------------+
-<<<<<<< HEAD
-Handy Links
-+-----------------------------------------+
-
-Branch basics - https://www.youtube.com/watch?v=LbanWJyLMnA
-Working with other peoples projects - https://www.youtube.com/watch?v=W7oR8-9H0gs
-http://james-ramsden.com/git-create-new-branch-push-bitbucket/
-
-+-----------------------------------------+
 General Git Commands
 +-----------------------------------------+
 
@@ -24,23 +15,13 @@ git add willsonite_1/*                  <- To add directory and all its contents
 git add .
 git status
 git commit -m "Adding derp"
-=======
-Basic Git Commands
-+-----------------------------------------+
-git add derp.rb
-git add willsonite_1/*                  <- To add directory and all its contents
-git add .
->>>>>>> 19384fe18fe2b39f053d68bd13ee5b77e5a612d0
 
 git checkout index.html                 <- Reverting to repo copy from your (probably bad) working copy
 git checkout 53283cd --index.html       <- How to change to version "53283cd" of file "index.html"
 
-<<<<<<< HEAD
 git mv second.txt pudding.txt           <- Rename file "second.txt", add + commit afterwards)
 git mv pudding.txt LoveNotes/patty.txt  <- Rename + move file "pudding.txt" , add + commit afterwards)
 
-=======
->>>>>>> 19384fe18fe2b39f053d68bd13ee5b77e5a612d0
 git reset HEAD profile.html             <- How to UNSTAGE a file "profile.html")
 
 +-----------------------------------------------------+
@@ -72,11 +53,7 @@ Push to master
 - git push origin new_dev_branch
 
 +------------------------------------------------------------------------------------------+
-<<<<<<< HEAD
-Downloading online repo code, setting up new branch from it and commiting to the NEW branch
-=======
 Downloading online repo code, setting up new branch from + commiting to the NEW branch
->>>>>>> 19384fe18fe2b39f053d68bd13ee5b77e5a612d0
 +------------------------------------------------------------------------------------------+
 
 Make a new folder:
@@ -105,7 +82,6 @@ Upload (“push“) your changes to the repository:
 
 Check github and you'll see a new branch has been created!
 
-<<<<<<< HEAD
 +-------------------------------------------+
 Setting a new remote after breaking previous
 +-------------------------------------------+
@@ -120,14 +96,6 @@ If you have two-factor authentication
 Make a token
 http://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed
 
-+-----------------------------------------+
-Having problems pushing changes after changing password
-+-----------------------------------------+
-
-https://stackoverflow.com/questions/29297154/github-invalid-username-or-password
-
-^ Create a new Personal Access Token
-=======
 +------------------------------------------------------------------------------------------+
 Downloading specific branch of a repo
 +------------------------------------------------------------------------------------------+
@@ -152,4 +120,3 @@ Setting a new remote after breaking previous
 
 git remote set-url origin https://github.com/dalyw01/Scanner.git
 git pull origin master
->>>>>>> 19384fe18fe2b39f053d68bd13ee5b77e5a612d0
