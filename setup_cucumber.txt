@@ -72,6 +72,6 @@ Installing OSX
 Using this guide for rbenv - https://github.com/rbenv/rbenv#readme
 Go here - https://brew.sh/
 Paste command fromHomeBrew into terminal
-Install Xcode if prompted
-Open xcode and allow it (may need to enter password)
+download Command Line Tools from the apple dev store - https://developer.apple.com/download/more/
+
 
