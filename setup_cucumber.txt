@@ -73,7 +73,17 @@ Download "Command Line Tools" from the Apple dev store - https://developer.apple
 Go here - https://brew.sh/
 Paste command fromHomeBrew into terminal
 Once that's finished...
-brew install cucumber-cpp
+
+brew install ruby
+
+Then point to the path of that versopm
+
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export GEM_HOME=/usr/local/opt/ruby/lib/ruby/gems/2.5.0
+export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/2.5.0
+
+gem install cucumber
+
 brew tap homebrew/cask
 brew cask install chromedriver
 
