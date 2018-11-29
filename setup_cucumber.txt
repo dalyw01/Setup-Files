@@ -69,9 +69,11 @@ cucumber .\features\core_functionality.feature:99 BROWSER=chrome
 - - - - - - - -
 Installing OSX
 - - - - - - - -
-Using this guide for rbenv - https://github.com/rbenv/rbenv#readme
+Download "Command Line Tools" from the Apple dev store - https://developer.apple.com/download/more/
 Go here - https://brew.sh/
 Paste command fromHomeBrew into terminal
-download Command Line Tools from the apple dev store - https://developer.apple.com/download/more/
-
+Once that's finished...
+brew install cucumber-cpp
+brew tap homebrew/cask
+brew cask install chromedriver
 
