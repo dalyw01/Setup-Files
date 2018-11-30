@@ -1,6 +1,6 @@
-+-----------------------------------+
-Quick setup of Cucumber for Windows!
-+-----------------------------------+
+- - - - - - - - - -
+Installing Windows
+- - - - - - - - - -
 
 Go here for most of the info you'll need! - https://www.spritecloud.com/2015/04/complete-setup-guide-for-ruby-cucumber-and-watir-on-windows/
 
@@ -17,55 +17,23 @@ Inside "devkit" I had files like
 	devkitvars.bat
 	msys.bat
 
-Go here if you're getting an SSL errror from above link - http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages 
 
-Download  "rubygems-update-2.6.7.gem"  and place inside "devkit" directory
+Download  "rubygems-update-2.6.7.gem" and place inside "devkit" directory
 
-+-----------------------------------+
-Setting up Cucumber tests
-+-----------------------------------+
+- - - - - - - - - - - - - -
+Setting up a Cucumber test
+- - - - - - - - - - - - - -
 
 Go to a place you want to setup you're cucumber suite of tests and type "cucumber --init"
 
-PS C:\Users\WillD\Desktop\asdsadad> cucumber --init
-*** WARNING: You must use ANSICON 1.31 or higher (https://github.com/adoxa/ansicon/) to get coloured output on Windows
-  create   features
-  create   features/step_definitions
-  create   features/support
-  create   features/support/env.rb
-
-PS C:\Users\WillD\Desktop\asdsadad> ls
-
-
-    Directory: C:\Users\WillD\Desktop\asdsadad
-
-
-Mode                LastWriteTime         Length Name
-----                -------------         ------ ----
-d-----       03/04/2018     19:11                features
-
-+-----------------------------------+
-Download Chrome web driver
-+-----------------------------------+
-
-Go here to download - https://sites.google.com/a/chromium.org/chromedriver/downloads
+Download Chrome web driver Windows - https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 Extract chrome webdriver and place in - C:\Windows 
-
-+-----------------------------------+
-Running a test
-+-----------------------------------+
-
-To run a test on a particular line with a particular browser -
-
-cucumber .\features\core_functionality.feature:99 BROWSER=chrome
-
-
-
 
 - - - - - - - -
 Installing OSX
 - - - - - - - -
+
 Install Apple CLT "Command Line Tools" from Apple site- https://developer.apple.com/download/more/
 Install HomeBrew here - https://brew.sh/
 Paste command fromHomeBrew into terminal
@@ -91,4 +59,13 @@ brew tap homebrew/cask
 brew cask install chromedriver
 brew install geckodriver < Firefox
 
+- - - - - - - - - - - - -
+Downloading team project
+- - - - - - - - - - - - -
 
+git clone https://github.com/bbc/smp-cookbook
+Cloning into 'smp-cookbook'...
+Username for 'https://github.com': dalyw01
+Password for 'https://dalyw01@github.com': 
+
+Password is a key you generate from - https://github.com/settings/tokens
