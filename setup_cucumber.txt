@@ -63,27 +63,29 @@ cucumber .\features\core_functionality.feature:99 BROWSER=chrome
 
 
 
-
-
-
 - - - - - - - -
 Installing OSX
 - - - - - - - -
-Download "Command Line Tools" from the Apple dev store - https://developer.apple.com/download/more/
-Go here - https://brew.sh/
+Install Apple CLT "Command Line Tools" from Apple site- https://developer.apple.com/download/more/
+Install HomeBrew here - https://brew.sh/
 Paste command fromHomeBrew into terminal
 Once that's finished...
 
 brew install ruby
+rbenv install 2.4.1
 
-Then point to the path of that versopm
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+ruby -v
+"ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin18]" < Should get this back
 
-export PATH=/usr/local/opt/ruby/bin:$PATH
-export GEM_HOME=/usr/local/opt/ruby/lib/ruby/gems/2.5.0
-export GEM_PATH=/usr/local/opt/ruby/lib/ruby/gems/2.5.0
+gem install cucumber -v 2.4.0
+gem install capybara
+gem install selenium-webdriver
+gem install rspec
+gem install touch_action
 
-gem install cucumber
-
+brew install selenium-server-standalone
 brew tap homebrew/cask
 brew cask install chromedriver
 
