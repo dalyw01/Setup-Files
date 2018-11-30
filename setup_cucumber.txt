@@ -87,5 +87,8 @@ gem install touch_action
 
 brew install selenium-server-standalone
 brew tap homebrew/cask
+
 brew cask install chromedriver
+brew install geckodriver < Firefox
+
 
