@@ -17,22 +17,13 @@ Downloading online repo code, setting up new branch from and commiting to the NE
 
 mkdir x
 cd x
-
 git init
-git clone https://github.com/dalyw01/Google-Voice-Assistant-Testing
-
-git branch will_branch
-git checkout will_branch
-
-touch 123.txt
-git add . 
-
-git commit -m "comment adding new file to branch"
-git push origin will_branch
-
- * [new branch]      will_branch -> will_branch
-
-Check github and you'll see a new branch has been created!
+git clone https://github.com/dalyw01/smp-tests
+git remote add origin git clone https://github.com/dalyw01/smp-tests.git
+git add .
+git commit -m "asdadads"
+git branch wills_branch
+git checkout wills_branch
 
 +-------------------------------------------+
 Setting a new remote after breaking previous
