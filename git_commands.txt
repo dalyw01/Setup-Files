@@ -1,7 +1,7 @@
 +-----------------------------------------------------+
 Creating repo from local files to an online GitHub repo
 +-----------------------------------------------------+
-Create the repo on github first e.g - https://github.com/dalyw01/my_new_repo
+FIRST create the repo on github e.g - https://github.com/dalyw01/my_new_repo
 
 mkdir project
 cd project
@@ -15,29 +15,22 @@ git push -u origin master
 Downloading online repo code, setting up new branch from + commiting to the NEW branch
 +------------------------------------------------------------------------------------------+
 
-Make a new folder:
-- mkdir derp
+mkdir x
+cd x
 
-Clone to that folder:
-- git clone https://github.com/dalyw01/Scanner
+git init
+git clone https://github.com/dalyw01/Google-Voice-Assistant-Testing
 
-Jump into that folder:
-- cd derp
+git branch will_branch
+git checkout will_branch
 
-Create a branch:
-- git branch JR-branch
+touch 123.txt
+git add . 
 
-Jump onto that branch:
-- git checkout JR-branch
+git commit -m "comment adding new file to branch"
+git push origin will_branch
 
-Add any new files:
-- git add * 
-
-Commit any changes. Note that nothing is uploaded yet!
-- git commit -m "comment"
-
-Upload (“push“) your changes to the repository:
-- git push origin JR-branch
+ * [new branch]      will_branch -> will_branch
 
 Check github and you'll see a new branch has been created!
 
