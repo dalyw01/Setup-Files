@@ -1,6 +1,6 @@
-+-----------------------------------------------------+
-Creating repo from local files to an online GitHub repo
-+-----------------------------------------------------+
++-----------------------------------------------------------------------+
+Creating repo from local files and pushing them to an online GitHub repo
++-----------------------------------------------------------------------+
 FIRST create the repo on github e.g - https://github.com/dalyw01/my_new_repo
 
 mkdir project
@@ -12,7 +12,7 @@ git remote add origin https://github.com/dalyw01/my_new_repo.git
 git push -u origin master
 
 +------------------------------------------------------------------------------------------+
-Downloading online repo code, setting up new branch from + commiting to the NEW branch
+Downloading online repo code, setting up new branch from and commiting to the NEW branch
 +------------------------------------------------------------------------------------------+
 
 mkdir x
