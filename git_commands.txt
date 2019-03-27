@@ -1,34 +1,8 @@
-+-----------------------------------------+
-General Git Commands
-+-----------------------------------------+
-
-git --version
-git config --global user.name 
-git config --global user.email
-git config --list
-git help commit
-git log
-git diff
-
-git add derp.rb
-git add willsonite_1/*                  <- To add directory and all its contents
-git add .
-git status
-git commit -m "Adding derp"
-
-git checkout index.html                 <- Reverting to repo copy from your (probably bad) working copy
-git checkout 53283cd --index.html       <- How to change to version "53283cd" of file "index.html"
-
-git mv second.txt pudding.txt           <- Rename file "second.txt", add + commit afterwards)
-git mv pudding.txt LoveNotes/patty.txt  <- Rename + move file "pudding.txt" , add + commit afterwards)
-
-git reset HEAD profile.html             <- How to UNSTAGE a file "profile.html")
-
 +-----------------------------------------------------+
 Creating repo from local files to an online GitHub repo
 +-----------------------------------------------------+
 
-Make a repo on github
+Make a repo on github FIRST
 - www.github.com
 
 Go to your folder
@@ -50,7 +24,7 @@ Commit the files
 - git commit -m "derpy derp"
 
 Push to master 
-- git push origin new_dev_branch
+- git push origin
 
 +------------------------------------------------------------------------------------------+
 Downloading online repo code, setting up new branch from + commiting to the NEW branch
