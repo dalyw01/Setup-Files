@@ -1,30 +1,15 @@
 +-----------------------------------------------------+
 Creating repo from local files to an online GitHub repo
 +-----------------------------------------------------+
+Create the repo on github first e.g - https://github.com/dalyw01/my_new_repo
 
-Make a repo on github FIRST
-- www.github.com
-
-Go to your folder
-- cd derp
-
-Check it has your files
-- ls
-
-Initialise git
-- git init
-
-Link it to the new repo
-- git remote add origin git@github.com:dalyw01/my_new_repo.git
-
-Add the files
-- git add .
-
-Commit the files
-- git commit -m "derpy derp"
-
-Push to master 
-- git push -u origin master
+mkdir project
+cd project
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/dalyw01/my_new_repo.git
+git push -u origin master
 
 +------------------------------------------------------------------------------------------+
 Downloading online repo code, setting up new branch from + commiting to the NEW branch
