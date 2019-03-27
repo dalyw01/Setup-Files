@@ -3,8 +3,8 @@ Creating repo from local files and pushing them to an online GitHub repo
 +-----------------------------------------------------------------------+
 FIRST create the repo on github e.g - https://github.com/dalyw01/my_new_repo
 
-mkdir project
-cd project
+mkdir x
+cd x
 git init
 git add .
 git commit -m "first commit"
@@ -14,6 +14,7 @@ git push -u origin master
 +------------------------------------------------------------------------------------------+
 Downloading online repo code, setting up new branch from and commiting to the NEW branch
 +------------------------------------------------------------------------------------------+
+First have the link to the repo you want to clone handy e.g - https://github.com/dalyw01/my_new_repo
 
 mkdir x
 cd x
