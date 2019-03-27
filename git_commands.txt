@@ -15,7 +15,7 @@ Initialise git
 - git init
 
 Link it to the new repo
-- git remote add origin https://github.com/dalyw/SetupCucumber.git
+- git remote add origin git@github.com:dalyw01/my_new_repo.git
 
 Add the files
 - git add .
@@ -24,7 +24,7 @@ Commit the files
 - git commit -m "derpy derp"
 
 Push to master 
-- git push origin
+- git push -u origin master
 
 +------------------------------------------------------------------------------------------+
 Downloading online repo code, setting up new branch from + commiting to the NEW branch
