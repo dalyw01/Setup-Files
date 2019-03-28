@@ -25,6 +25,7 @@ git add .
 git commit -m "asdadads"
 git branch wills_branch
 git checkout wills_branch
+git push -u origin wills_branch
 
 +-------------------------------------------+
 Setting a new remote after breaking previous
