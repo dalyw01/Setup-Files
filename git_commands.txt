@@ -20,7 +20,7 @@ mkdir x
 cd x
 git init
 git clone https://github.com/dalyw01/smp-tests
-git remote add origin git clone https://github.com/dalyw01/smp-tests.git
+git remote add origin https://github.com/dalyw01/smp-tests.git
 git add .
 git commit -m "asdadads"
 git branch wills_branch
