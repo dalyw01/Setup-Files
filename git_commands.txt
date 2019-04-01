@@ -22,10 +22,10 @@ git init
 git clone https://github.com/dalyw01/smp-tests
 git remote add origin https://github.com/dalyw01/smp-tests.git
 git add .
-git commit -m "asdadads"
-git branch wills_branch
-git checkout wills_branch
-git push -u origin wills_branch
+git commit -m "asdadads"        (This should make a master branch)
+git branch wills_branch         (Created a new branch)
+git checkout wills_branch       (Jump onto the branch)
+git push -u origin wills_branch (Push new code to the new branch)
 
 +-------------------------------------------+
 Setting a new remote after breaking previous
