@@ -19,20 +19,6 @@ Some helpful guides to refresh my memory!
 - http://www.korenlc.com/nested-arrays-hashes-loops-in-ruby/
 - https://www.foragoodstrftime.com/
 
-# Setting up Cucumber OSX
-- If updating Ruby for first time on Mac
-- ruby -v
-- curl -L https://get.rvm.io | bash -s stable     <- Installs homebrew 
-- source /Users/dalyw01/.rvm/scripts/rvm          <- Switchs to package manager
-- rvm install ruby-2.4.1                          <- Now this will work
-- bundle install                                  <- Should install everything you need for Cucumber
-- bundle update
-- gem list
-- gem update
-- brew tap homebrew/cask
-- brew install chromedriver
-- cucumber features/audio_player.feature -t @Simulcast
-
 # Javascript
 - http://www.phpied.com/3-ways-to-define-a-javascript-class/
 - To run Javsacript in Android (perhaps putting in a cookie) type into your URL bar -> javascript:alert();
