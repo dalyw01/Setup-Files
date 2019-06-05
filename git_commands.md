@@ -2,6 +2,8 @@
 
 Here is a list of quick commands to do most typical tasks
 
+![Git](https://dl2.macupdate.com/images/icons256/39062.png?d=1558008000)
+
 ## Creating repo from local files and pushing to GitHub
 
 FIRST create the repo on github e.g - https://github.com/dalyw01/my_new_repo
