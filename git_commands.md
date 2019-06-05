@@ -2,7 +2,7 @@
 
 Here is a list of quick commands to do most typical tasks
 
-## Creating repo from local files and pushing GitHub
+## Creating repo from local files and pushing to GitHub
 
 FIRST create the repo on github e.g - https://github.com/dalyw01/my_new_repo
 
@@ -14,7 +14,7 @@ git remote add origin https://github.com/dalyw01/my_new_repo.git
 git push -u origin master
 ```
 
-## Downloading online repo code, setting up new branch from and commiting to the NEW branch
+## Setting up new branch and commiting to it
 
 FIRST have the link to the repo you want to clone handy e.g - https://github.com/dalyw01/my_new_repo
 
@@ -35,23 +35,10 @@ git push -u origin wills_branch
 Make a folder and enter it
 
 ```
-mkdir apple
-cd apple
-```
-
-Download the branch "NihalBranch" from project "Test-Combos-For-Web" owned by dalyw01 into apple
-
-```
 git clone -b NihalBranch git@github.com:dalyw01/Test-Combos-For-Web.git
 ```
 
-Jump into the folder
-
-```
-cd Test-Combos-For-Web/
-```
-
-Verify on different branch
+Verify on branch
 
 ```
 git branch
