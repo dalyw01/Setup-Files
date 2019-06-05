@@ -19,27 +19,13 @@ FIRST have the link to the repo you want to clone handy e.g - https://github.com
 mkdir x
 cd x
 git init
-git clone https://github.com/dalyw01/smp-tests
-git remote add origin https://github.com/dalyw01/smp-tests.git
+git clone https://github.com/dalyw01/smp-ui-tests
+git remote add origin https://github.com/dalyw01/smp-ui-tests.git
 git add .
-git commit -m "asdadads"        (This should make a master branch)
-git branch wills_branch         (Created a new branch)
-git checkout wills_branch       (Jump onto the branch)
-git push -u origin wills_branch (Push new code to the new branch)
-
-+-------------------------------------------+
-Setting a new remote after breaking previous
-+-------------------------------------------+
-
-git remote set-url origin https://github.com/dalyw01/Scanner.git
-git pull origin master
-
-+-----------------------------------------+
-If you have two-factor authentication
-+-----------------------------------------+
-
-Make a token
-http://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed
+git commit -m "asdadads"
+git branch wills_branch 
+git checkout wills_branch    
+git push -u origin wills_branch
 
 +------------------------------------------------------------------------------------------+
 Downloading specific branch of a repo
