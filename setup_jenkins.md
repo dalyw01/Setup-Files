@@ -1,8 +1,8 @@
 # Setup Jenkins
 
-Jenkins is a helpful tool for automating jobs.
+Jenkins is a helpful tool for automating tasks.
 
-These jobs can vary in complexity. From building and deploying to simply running scripts.
+These jobs can vary in complexity. From building and deploying code to simply running scripts.
 
 ## Downloads
 
@@ -54,13 +54,13 @@ pipeline {
 
 In Jenkins make click *New Item*
 
-Select *Freestyle project*
+Select **Freestyle project**
 
-Add the url for "GitHub Project" - https://github.com/dalyw01/smp-ui-tests/
+Add the url for **GitHub Project** - https://github.com/dalyw01/smp-ui-tests/
 
-Tick on "Git" and add to the "Repository URL" - https://github.com/dalyw01/smp-ui-tests/
+Tick on **Git** and add to the **Repository URL** - https://github.com/dalyw01/smp-ui-tests/
 
-Under *Build* select *Execute Shell* and the enter these steps into the field
+Under **Build** select **Execute Shell** and the enter these steps into the field
 
 ```
 bundle install
