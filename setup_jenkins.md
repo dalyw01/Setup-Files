@@ -1,8 +1,12 @@
 # Setup Jenkins
 
+![Jenkins logo](https://wiki.jenkins.io/download/attachments/2916393/logo.png?version=1&modificationDate=1302753947000&api=v2)
+
 Jenkins is a helpful tool for automating tasks.
 
-These jobs can vary in complexity. From building and deploying code to simply running scripts.
+These tasks can vary massively in complexity. 
+
+From building and deploying code to simply running scripts.
 
 ## Downloads
 
@@ -12,7 +16,7 @@ Go to Jenkins website and download jenkins.war - https://jenkins.io/doc/pipeline
 
 ## Running Jenkins
 
-Run command to initiate Jenkins -
+Navigate to where you saved the .war and run this command to initiate Jenkins from your terminal -
 
 ```
 java -jar jenkins.war --httpPort=8080
@@ -26,13 +30,17 @@ java -jar jenkins.war --httpPort=8083
 
 Open in browser - http://localhost:8083/login?from=%2F
 
-Navigate to suggested directory in terminal to get initialAdminPassword run
+This should prompt you with a setup page
+
+Navigate to the suggested directory in your terminal to get initialAdminPassword run
 
 ```
 open initialAdminPassword"
 ```
 
-Install suggested plugins
+Copy the password from that file and paste it in
+
+Select **Install suggested plugins**
 
 ## Setting up for Ruby
 
