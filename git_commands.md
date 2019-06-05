@@ -18,7 +18,7 @@ git push -u origin master
 
 ## Setting up new branch and commiting to it
 
-FIRST have the link to the repo you want to clone handy e.g - https://github.com/dalyw01/my_new_repo
+FIRST have the link to the repo you want to clone handy e.g - https://github.com/dalyw01/smp-ui-tests.git
 
 ```
 mkdir x
@@ -27,7 +27,7 @@ git init
 git clone https://github.com/dalyw01/smp-ui-tests
 git remote add origin https://github.com/dalyw01/smp-ui-tests.git
 git add .
-git commit -m "asdadads"
+git commit -m "asdadads" (This is to generate a master branch)
 git branch wills_branch 
 git checkout wills_branch    
 git push -u origin wills_branch
