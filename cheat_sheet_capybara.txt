@@ -1,34 +1,4 @@
-    #------------------------------------------------------------------------
-    # Some Ruby Commands When Stuff Stops Working
-    #------------------------------------------------------------------------
-          
-    List gems       - gem list
-    Update all gems - bundle update
-    
-    #------------------------------------------------------------------------
-    # General Tips For Configuring Once Cucumber Is Installed
-    #------------------------------------------------------------------------
-        
-    Set up your cucumber.yml file in the following directory
-  
-    /Users/dalyw01/Desktop/Test/Cucumber/config
-    MC-S104581:config dalyw01$ ls
-    cucumber.yml
-  
-    Write on your cucumber.yml file the following
-  
-    default: BROWSER=chrome
-    firefox: BROWSER=firefox
-    safari: BROWSER=safari
-  
-    Some examples of running it with the new env variables set from the .yml file
-  
-    cucumber features/errors_checker.feature:19 -p default
-    cucumber features/errors_checker.feature:19 -p firefox
-    cucumber features/errors_checker.feature -p safari --tags @FLASH
-    cucumber features/core_functionality.feature:39 BROWSER=firefox
-  
-    #------------------------------------------------------------------------
+   #------------------------------------------------------------------------
     # General Commands For Browsers
     #------------------------------------------------------------------------
 
