@@ -12,8 +12,12 @@ On your Mac do the following...
 Make a note of your IP address of your machine, tt is located at -
 
 ```
-- Server =  On your Mac...[Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
-- Port   = 8888
+Apple Logo -> System Preferences -> Network
+```
+It should look something like 
+
+```
+192.168.3.121
 ```
 
 ## Connecting an iOS device to Mac so CHARLES can see traffic
@@ -27,8 +31,8 @@ Make a note of your IP address of your machine, tt is located at -
 - Select Manual
 - Enter into "Server" and "Port" the following
 ```
-- Server = 192.168.3.121 (This should be YOUR IP address)
-- Port   = 8888
+Server = 192.168.3.121 (This should be YOUR IP address)
+Port   = 8888
 ```
 - Authentication OFF
 - Tap Save
@@ -47,8 +51,8 @@ Make a note of your IP address of your machine, tt is located at -
 - Tap Advanced Options
 - Set Proxy to "Manual"
 ```
-- Server = 192.168.3.121 (This should be YOUR IP address)
-- Port   = 8888
+Server = 192.168.3.121 (This should be YOUR IP address)
+Port   = 8888
 ```
 - Connect to the WIFI of your machine you just configured
 - A pop-up in Charles should appear to allow or deny the connection device
