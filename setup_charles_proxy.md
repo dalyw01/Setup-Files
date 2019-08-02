@@ -38,8 +38,10 @@ On your Mac do the following...
 - Tap Modify Network
 - Tap Advanced Options
 - Set Proxy to "Manual"
+- Inside "Proxy Host Name" you need to get the IP address of your Mac
+- To do that go [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
 ```
-- Server = [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
+- Proxy Host Name = 192.168.3.121
 - Port   = 8888
 ```
 - Connect to the WIFI of your machine you just configured
