@@ -1,39 +1,43 @@
-++++++++++++++++++++++
-Setup Charles on a Mac
-++++++++++++++++++++++
-- Location OFF
-- ETHERNET cable in
-- Check you have internet connectivity
-- Network share ON (From ETHERNET and share with WIFI)
-- Start CHARLES
+# Setup Charles on a Mac
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Connect Ios device to laptop so CHARLES can see traffic
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-- Go to SETTINGS
-- Find the wi-fi name of your Mac (but don't connect to it)
+On your Mac do the following...
+
+- Location OFF
+- ETHERNET cable in (dirty, non corporate connection)
+- Verify you have internet connectivity in your browser
+- Network share ON (Share from an ETHERNET connection to WIFI)
+- Start running Charles
+- From here we will connect an iOS device and Android device observing their network traffic
+
+## Connect iOS device to Mac so CHARLES can see traffic
+
+- Go to SETTINGS on iOS device
+- Find the wi-fi name of your Mac (but don't connect to it yet)
 - Press i on the wi-fi name of your Mac
 - Under HTTP Proxy press "Configure Proxy"
 - Select Manual
-- Server = [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
+```
+- Server =  On your Mac...[Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
 - Port   = 8888
+```
 - Authentication OFF
 - Press Save
 - Press "Join This Network"
 - A pop-up in Charles should appear to allow or deny the connection device
 
 
-++++++++++++++++++++++++++++++++
-Connect Android device to laptop
-++++++++++++++++++++++++++++++++
+##Connect Android device to Mac so CHARLES can see traffic
+
 - Go to SETTINGS
 - Tap + Hold that network name
 - Tap "Connect to Network"
 - Tap Modify Network
 - Tap Advanced Options
 - Tap Proxy Manual
+```
 - Server = [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
 - Port   = 8888
+```
 - Connect to the PC you’ve configured
 
 +++++++++++++++++
