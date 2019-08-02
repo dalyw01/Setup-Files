@@ -1,38 +1,40 @@
-++++++++++++++++++++
-Setup Charles on OSX
-++++++++++++++++++++
-- Green ETHERNET cable in
-- Network share ON
-- Wi-fi OFF
+++++++++++++++++++++++
+Setup Charles on a Mac
+++++++++++++++++++++++
 - Location OFF
-- Start running CHARLES
+- ETHERNET cable in
+- Check you have internet connectivity
+- Network share ON (From ETHERNET and share with WIFI)
+- Start CHARLES
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Connect Ios device to laptop so CHARLES can see traffic
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- Go to SETTINGS
+- Find the wi-fi name of your Mac (but don't connect to it)
+- Press i on the wi-fi name of your Mac
+- Under HTTP Proxy press "Configure Proxy"
+- Select Manual
+- Server = [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
+- Port   = 8888
+- Authentication OFF
+- Press Save
+- Press "Join This Network"
+- A pop-up in Charles should appear to allow or deny the connection device
+
 
 ++++++++++++++++++++++++++++++++
 Connect Android device to laptop
 ++++++++++++++++++++++++++++++++
 - Go to SETTINGS
 - Tap + Hold that network name
+- Tap "Connect to Network"
 - Tap Modify Network
 - Tap Advanced Options
 - Tap Proxy Manual
-- Proxy hostname = [Apple Logo] -> [System Preferences] -> Network
-- Proxy Port     = 8888
-- Connect to the PC you’ve configured
-
-++++++++++++++++++++++++++++
-Connect Ios device to laptop
-++++++++++++++++++++++++++++
-- Go to SETTINGS
-- Under HTTP Proxy
-- Server = IP of PC (e.g 192.168.3.121 USUALLY)
+- Server = [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
 - Port   = 8888
-- Authentication OFF
-
-++++++++++++++++++++++++++++
-Note when connecting devices
-++++++++++++++++++++++++++++
-+ You can connect to a PC WITHOUT setting hostname + port
-+ However if you don't then the info will not be collected in Charles
+- Connect to the PC you’ve configured
 
 +++++++++++++++++
 HTTPS working iOS
