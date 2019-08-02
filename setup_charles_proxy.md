@@ -40,6 +40,8 @@ On your Mac do the following...
 - Set Proxy to "Manual"
 - Inside "Proxy Host Name" you need to get the IP address of your Mac
 - To do that go [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
+- For port enter 888
+- Your final details should look something like this
 ```
 - Proxy Host Name = 192.168.3.121
 - Port   = 8888
