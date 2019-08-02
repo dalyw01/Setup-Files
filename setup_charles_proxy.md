@@ -9,6 +9,13 @@ On your Mac do the following...
 - Start running Charles
 - From here we will connect an iOS device and Android device observing their network traffic
 
+Make a note of your IP address of your machine, tt is located at -
+
+```
+- Server =  On your Mac...[Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
+- Port   = 8888
+```
+
 ## Connecting an iOS device to Mac so CHARLES can see traffic
 
 - Go to SETTINGS on iOS device
@@ -18,8 +25,9 @@ On your Mac do the following...
 - Tap (i) of your Macs WIFI
 - Under HTTP Proxy tap "Configure Proxy"
 - Select Manual
+- Enter into "Server" and "Port" the following
 ```
-- Server =  On your Mac...[Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
+- Server = 192.168.3.121 (This should be YOUR IP address)
 - Port   = 8888
 ```
 - Authentication OFF
@@ -38,12 +46,8 @@ On your Mac do the following...
 - Tap Modify Network
 - Tap Advanced Options
 - Set Proxy to "Manual"
-- Inside "Proxy Host Name" you need to get the IP address of your Mac
-- To do that go [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
-- For port enter 8888
-- Your final details should look something like this
 ```
-- Proxy Host Name = 192.168.3.121
+- Server = 192.168.3.121 (This should be YOUR IP address)
 - Port   = 8888
 ```
 - Connect to the WIFI of your machine you just configured
