@@ -4,41 +4,46 @@ On your Mac do the following...
 
 - Location OFF
 - ETHERNET cable in (dirty, non corporate connection)
-- Verify you have internet connectivity in your browser
+- Verify you have internet connectivity on your browser
 - Network share ON (Share from an ETHERNET connection to WIFI)
 - Start running Charles
 - From here we will connect an iOS device and Android device observing their network traffic
 
-## Connect iOS device to Mac so CHARLES can see traffic
+## Connecting an iOS device to Mac so CHARLES can see traffic
 
 - Go to SETTINGS on iOS device
-- Find the wi-fi name of your Mac (but don't connect to it yet)
-- Press i on the wi-fi name of your Mac
-- Under HTTP Proxy press "Configure Proxy"
+- Go to WIFI
+- See listed WIFI networks
+- Find the WIFI name of your Mac (but don't connect to it yet)
+- Tap (i) of your Macs WIFI
+- Under HTTP Proxy tap "Configure Proxy"
 - Select Manual
 ```
 - Server =  On your Mac...[Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
 - Port   = 8888
 ```
 - Authentication OFF
-- Press Save
-- Press "Join This Network"
+- Tap Save
+- Tap "Join This Network"
 - A pop-up in Charles should appear to allow or deny the connection device
 
 
-##Connect Android device to Mac so CHARLES can see traffic
+## Connect Android device to Mac so CHARLES can see traffic
 
 - Go to SETTINGS
-- Tap + Hold that network name
-- Tap "Connect to Network"
+- Go to WIFI
+- See listed WIFI networks
+- Connect to WIFI of your machine
+- Tap + Hold the network name of your machines WIFI
 - Tap Modify Network
 - Tap Advanced Options
-- Tap Proxy Manual
+- Set Proxy to "Manual"
 ```
 - Server = [Apple Logo] -> [System Preferences] -> Network (e.g 192.168.3.121 USUALLY)
 - Port   = 8888
 ```
-- Connect to the PC you’ve configured
+- Connect to the WIFI of your machine you just configured
+- A pop-up in Charles should appear to allow or deny the connection device
 
 +++++++++++++++++
 HTTPS working iOS
