@@ -70,6 +70,10 @@ Tick on **Git** and add to the **Repository URL** - https://github.com/dalyw01/s
 
 Under **Build** select **Execute Shell** and the enter these steps into the field
 
+Tick **rbenv build wrapper** and put - 2.5.3
+
+Inside "Preinstall gem list" have - bundler,cucumber,capybara,rspec,selenium-webdriver,touch_action,image_size,chunky_png
+
 ```
 bundle install
 
