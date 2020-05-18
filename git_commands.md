@@ -1,5 +1,9 @@
 # Git and Github
 
+Download from homebrew
+
+Setup SSH key here - https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 Here is a list of quick commands to do most typical tasks
 
 ![Git](https://dl2.macupdate.com/images/icons256/39062.png?d=1558008000)
