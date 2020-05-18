@@ -1,8 +1,10 @@
 # Git and Github
 
-Download from homebrew
+Download from homebrew - brew install git
 
-Setup SSH key here - https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+Setup SSH key here to link your machine and your account - https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+To be able to push via HTTPS - https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
 
 Here is a list of quick commands to do most typical tasks
 
